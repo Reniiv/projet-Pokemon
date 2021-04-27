@@ -1,0 +1,4 @@
+<div class="block">
+		<button class="open">Open</button>
+		<button class="carte" onclick="updateBtn()"><img id="imgbtn" src="/static/pokemon/{{carte[3]}}"></button>
+</div>

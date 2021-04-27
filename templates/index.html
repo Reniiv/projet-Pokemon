@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- importation des fichiers -->
+    
+    <link rel="stylesheet" href="/static/style.css" media="screen" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="{{ url_for('static', filename='Pokeball.png') }}"/>
+    <title>Booster Opening</title>
+	
+	<!-- apparence des liens cliquable -->
+	
+	<style>
+    	.link { color: #FF0000; text-decoration: none}
+ 	</style>
+	
+</head>
+
+	<!-- citation -->
+
+<body>
+	<h3>Arrêtez de les poursuivre ! Plus vous partez à leur recherche, moins vous vous en approchez.</h3>
+	
+	<!-- header -->
+	
+<header>
+  <h4><strong>Booster </strong>Opening</h4>
+	<img src="{{ url_for('static', filename='Pokeball.png') }}" alt="logo">
+</header>
+	
+	<!-- zone de connexion -->
+	
+	<div id="container">
+            
+		<form action="/login_validation" method="POST">
+			<h1>Connexion</h1>
+
+			<label><b>&nbsp; &nbsp; Nom d'utilisateur</b></label>
+			<input type="text" placeholder="Nom d'utilisateur" name="name" required>
+
+			<label><b>&nbsp; &nbsp; Mot de passe</b></label>
+			<input type="password" placeholder="Mot de passe" name="password" required>
+
+			<input type="submit" id="submit" value="LOGIN" >
+			<p class="error">{{msg}}</p>
+			<h2>Si vous n'avez pas de compte, <a class="link" href="/register">enregistrez vous ici</a></h2>
+		</form>
+	</div>
+</body>
+</html>

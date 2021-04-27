@@ -1,0 +1,181 @@
+
+/* background */
+
+body {
+    background-image: url("/static//background.png");
+    color: white;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+.container {
+    padding: 20px;
+    margin: 0 auto;
+}
+
+/* titre de la page */
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 54px;
+	padding-top: 80px;
+}
+
+/* mise en page de la collection */
+
+#pokedex {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 60px;
+    padding-inline-start: 0;
+}
+
+/* gestion des box */
+
+.card {
+    list-style: none;
+    padding: 50px;
+	margin: 40px;
+    background-color: #f4f4f4;
+    color: #222;
+  	text-align: center;
+	border-radius: 20px;
+	height: 200px;
+}
+
+.card:hover {
+    animation: bounce 0.4s linear;
+}
+
+.card-title {
+	font-family: 'Rubik', sans-serif;
+    text-transform: capitalize;
+    margin-bottom: 0px;
+    font-size: 32px;
+}
+
+.card-image {
+    height: 180px;
+}
+
+/* animation hover sur les cartes */
+
+@keyframes bounce {
+    20% {
+        transform: translateY(-6px);
+    }
+    40% {
+        transform: translateY(0px);
+    }
+
+    80% {
+        transform: translateY(-2px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* bouton déconnexion */
+
+.logout {
+	background:    #333333;
+	border-radius: 25px;
+	box-shadow:    -1px 2px #444;
+	padding:       10px;
+	margin-right: 20px;
+	text-decoration: none;
+	color:         #fff;
+	display:       inline-block;
+	font: bold 20px 'Rubik', sans-serif;
+	text-align:    center;
+	border: 2px solid #333333;
+	cursor: pointer;
+}
+
+.logout:hover {
+	background-color: white;
+	color: #333333;
+	border: 2px solid #333333;
+}
+
+/* titre */
+
+h2 {
+	font-family: 'Rubik', sans-serif;
+	position: absolute;
+	margin-top: 18px;
+	padding-left: 80px;
+}
+
+/* menu */
+
+.menu {
+	font-family: 'Rubik', sans-serif;
+	background: #333333;
+	background: -webkit-linear-gradient(to right, #dd1818, #333333);  
+	background: linear-gradient(to left, #dd1818, #333333); 
+	border-bottom-right-radius: 30px;
+	border-bottom-left-radius: 30px;
+	color: #fff;
+	height: 75px;
+	width: 100%;
+	font-size: 20px;
+	position: absolute;
+	text-align: right;
+	top: 0;
+} 
+
+nav ul {
+	margin-top: 15px
+}
+
+nav li {
+	display:inline-block; 
+	transition: background 0.2s;
+	margin: 5px;
+	border-radius: 10px;
+} 
+
+nav li a { 
+	text-decoration: none;
+	display: inline-block;
+	margin-left: 20px;
+	margin-right: 20px;
+	font-family: 'Rubik', sans-serif;
+	font: 20px sans-serif;  
+	color: black;
+}
+
+nav li.active, nav li:hover{ 
+	border-radius: 10px;
+	background: white;
+} 
+
+/* Logo */
+
+.image {
+	float: left;
+	padding: 15px;
+	width: 45px;
+}
+
+/* footer */
+
+.wrap {
+	font-family: 'Rubik', sans-serif;
+	background: #333333;
+	background: -webkit-linear-gradient(to right, #dd1818, #333333);  
+	background: linear-gradient(to left, #dd1818, #333333); 
+	border-top-right-radius: 30px;
+	border-top-left-radius: 30px;
+	color: #fff;
+	height: 75px;
+	width: 100%;
+	font-size: 20px;
+	text-align: right;
+	bottom: 0;
+} 
+
+

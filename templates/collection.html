@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- importation des fichiers -->
+
+<link rel="stylesheet" href="/static/collection.css" media="screen" type="text/css" />
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+<link rel="shortcut icon" type="image/png" href="/static/Pokeball.png"/>
+	
+<title>Booster Opening</title>
+</head>
+<!-- menu -->
+	
+	<header>
+			<div class="nav">
+				<nav class="menu">
+				<img class= "image" src="/static/Pokeball.png" alt="logo ">
+				<h2> Booster Opening </h2>
+					<ul>
+					<li><a href="/home"><strong>Opening</strong></a></li>
+					<li><a href="/collection"><strong>Collection</strong></a></li>
+					<a class="logout" href="/logout">Logout</a>
+					</ul>
+				</nav>
+			</div>
+	</header>
+<body>
+	<div class="container">
+		<h1>Collection</h1>
+		<ul id="pokedex"></ul>
+	</div>
+	<script type="text/javascript" src="/static/collection.js"></script>
+	<script>
+const list =[1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+  		fetchPokemons(list)
+	</script>
+	<!-- footer -->
+	
+	<footer>
+		<div class="wrap"> 
+		</div>
+	</footer>
+</body>
+</html>

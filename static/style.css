@@ -1,0 +1,111 @@
+/* Mise en place du background */
+
+body{
+	background: #333333;
+	background: -webkit-linear-gradient(to right, #dd1818, #333333);  
+	background: linear-gradient(to left, #dd1818, #333333); 
+}
+
+/* Zone de Connexion */
+
+#container{
+	float: right;
+	font-family: 'Rubik', sans-serif;
+	width: 500px;
+	margin: 0 auto;
+	padding: 200px;
+}
+
+
+form {
+	width:100%;
+	border: 1px solid #f1f1f1;
+	border-radius: 20px;
+	background: #fff;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#container h1{
+	font-family: 'Rubik', sans-serif;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+#container h2{
+	font-family: 'Rubik', sans-serif;
+	text-align: center;
+	font-size: 13px;
+}
+
+input[type=text], input[type=password], input[type=email]{
+	width: 95%;
+	padding: 12px 20px;
+	margin: 11px;
+	display: inline-block;
+	border: 2px solid #ccc;
+	box-sizing: border-box;
+}
+
+/* Buttons */
+
+input[type=submit] {
+	font-family: 'Rubik', sans-serif;
+	background-color: #dd1818;
+	color: white;
+	padding: 12px 20px;
+	margin: 11px;
+	border: 2px solid #dd1818;
+	border-radius: 20px;
+	cursor: pointer;
+	width: 95%;
+}
+
+input[type=submit]:hover {
+	background-color: white;
+	color: #dd1818;
+	border: 2px solid #dd1818;
+}
+
+/* Texte */
+
+h3 {
+	font-family: 'Rubik', sans-serif;
+	position: absolute;
+	display: inline;
+	font-size: 45px;
+	text-alig: left;
+	margin-top: 260px;
+	margin-right: 850px;
+	margin-left: 120px;
+	text-align: justify;
+	color: white;
+}
+
+h5 {
+	font-family: 'Rubik', sans-serif;
+	position: absolute;
+	display: inline;
+	font-size: 45px;
+	text-alig: left;
+	margin-top: 345px;
+	margin-right: 850px;
+	margin-left: 120px;
+	text-align: justify;
+	color: white;
+}
+
+/* Logo + Nom du site */
+
+h4 {
+	font-family: 'Rubik', sans-serif;
+	font-size: 23px;
+	position: absolute;
+	padding-left: 100px;
+	color: white;
+}
+
+img { 
+	width: 50px;
+	padding: 20px;
+	float: left;	
+}

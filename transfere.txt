@@ -1,0 +1,21 @@
+[0, 0, 0, 0, 0, 0, 0, 0]
+let i = 0;
+
+function updateBtn() {
+  // variable qui recupere la source de mon bouton
+  var source = imgbtn.src;
+  //variable qui recupere le chiffre de ma carte dans la source
+  var jsp = source.substring(37,40);
+  //Transforme le chiffre en entier
+  a = parseInt(jsp);
+  //Lui ajoute 1
+  c = a + 1
+  if (c == 8){
+    c=0;
+  }
+  a.toString();
+  c.toString();
+  var str = source.replace(a, c);
+  console.log(str)
+  imgbtn.src = "/static/pokemon/" + c + ";
+}

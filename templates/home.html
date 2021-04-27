@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<title>Booster Opening</title>
+	
+	<!-- importation des fichiers -->
+	
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+<link rel="shortcut icon" type="image/png" href="/static/Pokeball.png"/>
+<link href="/static/home.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	
+	<!-- menu -->
+	
+	<header>
+			<div class="nav">
+				<nav class="menu">
+				<img class= "image" src="/static/Pokeball.png" alt="logo ">
+				<h1> Booster Opening </h1>
+					<ul>
+					<li><a href="/home"><strong>Opening</strong></a></li>
+					<li><a href="/collection"><strong>Collection</strong></a></li>
+					<a class="logout" href="/logout">Logout</a>
+					</ul>
+				</nav>
+			</div>
+
+	</header>
+	<script type="text/javascript" src="/static/JS.js"></script>
+	<!-- affichage des cartes pokemon -->
+	
+	<div class="block">
+		<button class="open" onclick="history.go(0)">Open</button>
+		<button class="carte" onclick="updateBtn()" ><img id="imgbtn" src="/static/pokemon/{{carte[3]}}"></button>
+
+	</div>
+
+
+	<!-- footer -->
+
+	<footer>
+		<div class="wrap"> 
+		</div>
+	</footer>
+</body>
+</html>
